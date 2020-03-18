@@ -3,6 +3,12 @@
   "description": "Thamos advise on S2I build process.",
   "difficulty": "beginner",
   "time": "2 minutes",
+  "backend": {"imageid": "openshift-4-2"},
+  "environment": {
+        "showdashboard": true,
+        "dashboards": [{"name": "Console", "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"}],
+        "uilayout": "terminal-iframe"
+  },
   "details": {
     "steps": [{
       "title": "Step 1 - Run Command",
@@ -15,12 +21,5 @@
     "finish": {
       "text": "finish.md"
     }
-  },
-  "environment": {
-    "uilayout": "terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
-  },
-  "backend": {
-    "imageid": "openshift-3-11"
   }
 }
