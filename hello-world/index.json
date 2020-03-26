@@ -1,9 +1,9 @@
 {
     "icon": "fa-openshift",
-    "title": "Playground (OpenShift 4.2)",
+    "title": "Building s2i with Thoth",
     "description": "",
     "pathwayTitle": "OpenShift",
-    "difficulty": "beginner",
+    "difficulty": "intermediate",
     "time": "60 minutes",
     "backend": {
         "imageid": "openshift-4-2"
