@@ -17,6 +17,12 @@
         "steps": [{
             "title": "Getting Started",
             "text": "setup.md"
+        },{
+            "title": "Getting the sample python app",
+            "text": "setup.md"
+        },{
+            "title": "Thoth s2i parameters",
+            "text": "setup.md"
         }],
         "intro": {
             "code": "set-env.sh",
