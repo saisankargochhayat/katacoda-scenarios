@@ -25,3 +25,7 @@ You would see `thamos advise` being run your stack and if there is a suggestion.
 Incase the analysis fails, we resort to the existing Piplock for to prevent the build from failing. 
 
 Your app should be running under `Workloads -> Pods`.
+
+If you want to pull down the remove app you deployed - 
+
+``oc delete all --selector 'app=s2i-example-log'``{{copy}}
