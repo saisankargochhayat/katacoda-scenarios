@@ -13,7 +13,8 @@ the cluster).
 
 You can find a list of base images which you can use with Thoth in [s2i-thoth repository](https://github.com/thoth-station/s2i-thoth) 
 with detailed instructions on how to use Thoth in the OpenShift’s s2i process. 
-The container images are hosted at quay.io/organization/thoth-station with the 
+The container images are hosted at - 
+`quay.io/organization/thoth-station` with the 
 prefix s2i.
 
 We are going to discover more about it in the next step how you can customize the process.
