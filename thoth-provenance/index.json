@@ -1,38 +1,38 @@
 {
-  "title": "Building s2i check with Thoth Provenance",
-  "description": "Provenance check during Openshift source to image build",
-  "difficulty": "Intermediate",
-  "time": "40",
-  "details": {
-    "steps": [
-      {
-        "title": "Step 1",
-        "text": "step1.md"
-      },
-      {
-        "title": "Step 2",
-        "text": "step2.md"
-      },
-      {
-        "title": "Step 3",
-        "text": "step3.md"
-      },
-      {
-        "title": "Step 4",
-        "text": "step4.md"
-      }
-    ],
-    "intro": {
-      "text": "intro.md"
+    "icon": "fa-openshift",
+    "title": "Building s2i with Thoth Provenance",
+    "description": "",
+    "pathwayTitle": "OpenShift",
+    "difficulty": "intermediate",
+    "time": "40 minutes",
+    "backend": {
+        "imageid": "openshift-4-2"
     },
-    "finish": {
-      "text": "finish.md"
+    "environment": {
+        "showdashboard": true,
+        "dashboards": [{"name": "Console", "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"}],
+        "uilayout": "terminal-iframe"
+    },
+    "details": {
+        "steps": [{
+            "title": "Getting Started",
+            "text": "setup.md"
+        },{
+            "title": "Getting the sample python app",
+            "text": "app.md"
+        },{
+            "title": "Thoth s2i parameters",
+            "text": "parameter.md"
+        },{
+            "title": "Let's Deploy",
+            "text": "deploy.md"
+        }],
+        "intro": {
+            "code": "set-env.sh",
+            "text": "intro.md"
+        },
+        "finish": {
+            "text": "finish.md"
+        }
     }
-  },
-  "environment": {
-    "uilayout": "terminal"
-  },
-  "backend": {
-    "imageid": "python:3.6"
-  }
 }
