@@ -24,7 +24,15 @@ If you go to Builds in the Openshift UI in the other tab, under `Builds`, you wo
 You would see `thamos advise` being run your stack and if there is a suggestion. 
 Incase the analysis fails, we resort to the existing Piplock for to prevent the build from failing. 
 
-Your app should be running under `Workloads -> Pods`.
+Now lets check the logs - 
+
+``oc logs bc/s2i-example-log -f``{{execute}}
+
+You should keep a eye for these things - 
+ -  Thoth's configuration file after hardware and software discovery (that's the .thoth.yaml being expanded from the template.)
+ - Asking Thoth for advise... (That is where thamos interacts with thoth api)
+
+Now if Your app should be running under `Workloads -> Pods`.
 
 If you want to pull down the remove app you deployed - 
 
