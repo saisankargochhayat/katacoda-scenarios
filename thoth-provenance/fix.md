@@ -32,6 +32,8 @@ You should keep a eye for these things in the log -
 If you scroll to the end of it, you should see something similar to this - 
 ![provenance pass](https://raw.githubusercontent.com/saisankargochhayat/katacoda-scenarios/master/thoth-provenance/assets/provenance_pass.png)
 
+Provenance check passed! \o/
+
 You can check the logs from the deployed app using - 
 
 ``oc logs -f dc/s2i-example-log``{{execute}}

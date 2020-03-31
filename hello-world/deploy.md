@@ -6,9 +6,6 @@ If you haven't forked the repo and made any changes, you can try deploy our vers
 
 ``oc process -f https://raw.githubusercontent.com/thoth-station/s2i-example/log-thoth/openshift.yaml | oc apply -f -``{{execute}}
 
-Else if you wanna try with the changes you made on your fork, try this - 
-``oc process -f https://raw.githubusercontent.com/<your-github-username>/s2i-example/log-thoth/openshift.yaml | oc apply -f -``{{copy}}
-
 
 
 
@@ -35,7 +32,11 @@ You should keep a eye for these things in the log -
  - Thoth's configuration file after hardware and software discovery (that's the .thoth.yaml being expanded from the template.)
  - Asking Thoth for advise... (That is where thamos interacts with Thoth API)
 
-Now if Your app should be running under `Workloads -> Pods`.
+Now if check the UI, your app should be running under `Workloads -> Pods`.
+
+You can check the logs from the deployed app using - 
+
+``oc logs -f dc/s2i-example-log``{{execute}}
 
 If you want to pull down the remove app you deployed - 
 
