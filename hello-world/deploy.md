@@ -34,7 +34,7 @@ You should keep a eye for these things in the log -
 
 Now if check the UI, your app should be running under `Workloads -> Pods`.
 
-You can check the logs from the deployed app using - 
+Once the application is deployed, you can check the logs from the deployed app using - 
 
 ``oc logs -f dc/s2i-example-log``{{execute}}
 
