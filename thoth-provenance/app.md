@@ -1,14 +1,13 @@
-Before we explore more about the build process, go ahead fork the sample repo,
-to explore more about the s2i process. 
+Before we explore more about the build process, to explore more about the s2i process. 
 
 Here is the example repo we are going to try today - 
 
-``https://github.com/thoth-station/s2i-example``
+[https://github.com/thoth-station/s2i-example-tensorflow](https://github.com/thoth-station/s2i-example-tensorflow)
 
-Now that you have forked it, let's check out the `log-thoth-broken` branch.
-The upstream link to the same is - `https://github.com/thoth-station/s2i-example/tree/log-thoth`
+Let's check out the `log-thoth-broken` branch.
+The upstream link to the same is - [https://github.com/thoth-station/s2i-example/tree/log-thoth-broken](https://github.com/thoth-station/s2i-example/tree/log-thoth-broken)
 
-If you go to app.py, it's a simple python app that prints `Hello thoth` every 10 seconds. 
+If you go to app.py, it's a simple Python app that prints `Hello thoth` every 10 seconds. 
 And you have a Pipfile that has `daiquiri` as the only package. That is the standard python project, we are going to experiment with. 
 
 Now let's explore the `openshift.yaml`. 
@@ -29,12 +28,11 @@ End of the yaml, we declare the image to be `s2i-thoth-ubi8-py36`
           referencePolicy:
             type: "Source"
 ```
-And we use this under `build config` under line 26, stating our source repo to be - 
+And we use this under BuildConfig under line 26, stating our source repo to be - 
 ```
 git:
     uri: "https://github.com/thoth-station/s2i-example"
-    ref: "log-thoth"
+    ref: "log-thoth-broken"
 ```
-You could change this to point to your repo fork.
-Now that we have successfully setup the repo, and are using a thoth powered s2i image, let's explore some configuration options, that 
+Now that we have successfully exlpored the repo, and are using a thoth powered s2i image, let's explore some configuration options, that 
 thoth image provides out of box. 
