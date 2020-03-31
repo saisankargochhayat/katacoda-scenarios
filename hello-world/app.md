@@ -36,5 +36,5 @@ git:
     ref: "log-thoth"
 ```
 You could change this to point to your repo fork.
-Now that we have successfully setup the repo, and are using a thoth powered s2i image, let's explore some configuration options, that 
+Now that we have successfully explored the repo, and are using a Thoth powered s2i image, let's explore some configuration options, that 
 thoth image provides out of box. 
