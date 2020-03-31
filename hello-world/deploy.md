@@ -28,7 +28,7 @@ Now lets check the logs -
 
 ``oc logs bc/s2i-example-log -f``{{execute}}
 
-You should keep a eye for these things - 
+You should keep a eye for these things in the log - 
  -  Thoth's configuration file after hardware and software discovery (that's the .thoth.yaml being expanded from the template.)
  - Asking Thoth for advise... (That is where thamos interacts with thoth api)
 
