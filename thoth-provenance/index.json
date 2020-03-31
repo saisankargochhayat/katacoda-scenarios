@@ -26,6 +26,9 @@
         },{
             "title": "Let's Deploy",
             "text": "deploy.md"
+        },{
+            "title": "Fix the error",
+            "text": "fix.md"
         }],
         "intro": {
             "code": "set-env.sh",

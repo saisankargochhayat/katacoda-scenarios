@@ -19,10 +19,9 @@ imagestream.image.openshift.io/s2i-thoth-ubi8-py36 created
 
 Make sure you have selected `myproject` on the project selector. 
 If you go to Builds in the Openshift UI in the other tab, under `Builds`, you would see `s2i-example-log` and under logs you could inspect the build process. 
-You would see `thamos advise` being run your stack and if there is a suggestion. 
-Incase the analysis fails, we resort to the existing Pipfile.lock for to prevent the build from failing. 
+You would see `thamos provenance-check` being run your stack. 
 
-Now lets check the logs - 
+You can also check the logs from the terminal. Lets check the logs - 
 
 ``oc logs bc/s2i-example-log -f``{{execute}}
 
@@ -31,8 +30,12 @@ You should keep a eye for these things in the log -
  - Asking Thoth for provenance check... (That is where thamos interacts with Thoth API)
 
 If you scroll to the end of it, you should see something similar to this - 
-![provenance fail]()
+![provenance fail](https://raw.githubusercontent.com/saisankargochhayat/katacoda-scenarios/master/thoth-provenance/assets/provenance_fail.png)
 
-If you want to pull down the remove app you deployed - 
+We can see `python-json-logger` has an `INVALID-ARTIFACT-HASH`. Let's figure out why this happened - 
+If you take a look at the [Pipfile.lock](https://github.com/thoth-station/s2i-example/blob/log-thoth-broken/Pipfile.lock#L29) 
+Right there at line 29, we have the corrupt SHA that was caught during the provenance check and we prevented a potentially unsafe package from being uninstalled. 
+
+Now let's pull down the app you deployed and deploy a version that is not broken - 
 
 ``oc delete all --selector 'app=s2i-example-log'``{{execute}}
