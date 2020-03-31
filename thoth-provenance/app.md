@@ -5,7 +5,7 @@ Here is the example repo we are going to try today -
 
 ``https://github.com/thoth-station/s2i-example``
 
-Now that you have forked it, let's check out the `log-thoth` branch.
+Now that you have forked it, let's check out the `log-thoth-broken` branch.
 The upstream link to the same is - `https://github.com/thoth-station/s2i-example/tree/log-thoth`
 
 If you go to app.py, it's a simple python app that prints `Hello thoth` every 10 seconds. 

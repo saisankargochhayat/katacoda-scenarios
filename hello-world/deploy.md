@@ -2,11 +2,11 @@ Now that you are familiar with the configurations our s2i image offers, let's tr
 
 Assuming you have followed the steps from before are logged in as an admin into `myproject` in the openshift cluster lets deploy - 
 
-``oc process -f https://raw.githubusercontent.com/<your-github-username>/s2i-example/log-thoth/openshift.yaml | oc apply -f -``
+``oc process -f https://raw.githubusercontent.com/<your-github-username>/s2i-example/log-thoth/openshift.yaml | oc apply -f -``{{copy}}
 
 If you haven't forked the repo and made any changes, you can try deploy our version using - 
 
-``oc process -f https://raw.githubusercontent.com/thoth-station/s2i-example/log-thoth/openshift.yaml | oc apply -f -``{{copy}}
+``oc process -f https://raw.githubusercontent.com/thoth-station/s2i-example/log-thoth/openshift.yaml | oc apply -f -``{{execute}}
 
 
 Now that you have scheduled it in the katacoda terminal on the right, you should see this - 
@@ -28,4 +28,4 @@ Your app should be running under `Workloads -> Pods`.
 
 If you want to pull down the remove app you deployed - 
 
-``oc delete all --selector 'app=s2i-example-log'``{{copy}}
+``oc delete all --selector 'app=s2i-example-log'``{{execute}}
