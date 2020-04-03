@@ -6,8 +6,8 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "title": "Setup the environment.",
+        "text": "setup.md"
       },
       {
         "title": "Step 2",
