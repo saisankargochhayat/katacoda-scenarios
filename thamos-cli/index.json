@@ -2,7 +2,7 @@
   "title": "Thamos CLI",
   "description": "",
   "difficulty": "Intermediate",
-  "time": "20",
+  "time": "40",
   "details": {
     "steps": [
       {
@@ -11,11 +11,7 @@
       },
       {
         "title": "Running Thamos Advise",
-        "text": "step2.md"
-      },
-      {
-        "title": "Step 3",
-        "text": "step3.md"
+        "text": "advise.md"
       }
     ],
     "intro": {
