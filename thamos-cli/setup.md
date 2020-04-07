@@ -22,6 +22,7 @@ You can see all the files, that our sample repo contains in the Katacoda editor.
 Now let's check out our sample application - 
 
 ``cat app.py``{{execute}}
+``s2i-example/app.py``{{open}}
 
 And to check all the direct dependencies it needs using - 
 
