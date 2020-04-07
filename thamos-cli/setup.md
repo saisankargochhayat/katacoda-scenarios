@@ -21,7 +21,7 @@ You can see all the files, that our sample repo contains in the Katacoda editor.
 
 Now let's check out our sample application - 
 
-``app.py``{{open}}
+``cat app.py``{{execute}}
 
 And to check all the direct dependencies it needs using - 
 
